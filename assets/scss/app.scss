@@ -1,0 +1,233 @@
+// Custom bootstrap variable overrides
+@import "bootstrap_variable_overrides";
+
+// Bootstrap and its default variables
+@import "bootstrap/bootstrap";
+
+// Your style
+@import "variables";
+@import "mixins";
+@import "general";
+@import "layout";
+@import "module";
+
+.navbar {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    align-items: flex-end;
+    background-color: white;
+    font-weight: bold;
+    color: black;
+    margin: 0 auto;
+
+    &__buttons{
+        color: black;
+    }
+
+    &__logo{
+        min-width: 163px;
+        min-height: 41px;
+        background: url('./../img/logo.svg') center no-repeat;
+        opacity: 1;
+    }
+}
+
+.bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.sections{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    position: relative;
+    width: 75%;
+    background: #ED731B 0% 0% no-repeat padding-box;
+    margin: 50px auto;
+    padding: 130px;
+
+    &__title{
+        font-size: 62px;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    &__text{
+        font-size: 24px;
+        text-align: center;
+        letter-spacing: 0px;
+        color: #000000;
+    }
+}
+
+.card_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 75%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.card{
+    margin: 20px;
+    border: none;
+
+    &__title{
+        text-align: left;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+        font-size: 58px;
+        font-weight: bold;
+    }
+
+    &__button{
+        width: 164px;
+        height: 50px;
+        margin-top: 20px;
+        border: 2px solid #ED731B;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0px;
+        color: #000000;
+        background: none;
+        outline: none;
+    }
+
+    &__image{
+        min-width: 149px;
+        min-height: 159px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.more{
+    min-width: 100vw;
+    min-height: 600px;
+    background: url('./../img/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    padding: 100px;
+    font-weight: bold;
+
+    &__left{
+        width: 500px;
+        color: white;
+    }
+
+    &__text{
+        font-size: 34px;
+        color: white;
+    }
+}
+
+.services{
+    background: #DDF5FD;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+    padding-top: 100px;
+
+    &__title{
+        text-align: left;
+        font-size: 40px;
+        letter-spacing: 0px;
+        color: #ED731B;
+        opacity: 1;
+        font-weight: bold;
+    }
+
+    &__card{
+        border: 4px solid #ED731B;
+        width: 378px;
+        height: 568px;
+        padding-top: 60px;
+        padding-left: 20px;
+    }
+
+    &__card-list{
+        margin-top: 20px;
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__card-title{
+        font-size: 58px;
+        font-weight: bold;
+    }
+
+    &__card-list{
+        
+    }
+
+    &__card-row{   
+    }
+}
+
+.triangle{
+    position: absolute;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 80px solid  #ED731B;
+    transform: rotate(45deg); 
+    right: 5%;
+    margin-top: -60px;
+}
+
+.orange{
+    color: #ED731B;
+}
+
+.white{
+    color: white;
+}
+
+.row{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.left_border{
+    border-left: 4px solid #ED731B;
+    padding-left: 40px;
+}
+
+
+.row-left{
+    position: relative;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
